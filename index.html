@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Voice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #textarea {
+            width: 300px;
+            height: 150px;
+        }
+        #playbtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #word {
+            font-weight: bold;
+            color: blue;
+        }
+        #panel {
+        width: 300px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        display: inline-block;
+        overflow-wrap: break-word; /* Add this line */
+    }
+        #panel span {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textarea">Bangladesh is a small and beautiful country in South Asia. We got independence in 1971 from Pakistan after a long war. Because of the sacrifice of millions of freedom fighters we got this country. 16 December is our Victory Day because this day the Pakistani army surrendered.
+
+        And 26th March is our Independence Day because in 1971’s 26th March Ziaur Rahman declared our independence from Chittagong. We are the only nation that sacrifices lives for language and now it is known as International Mother Language Day on 21st February. More than 180 countries celebrate this day. Bangladesh is a very beautiful country to see.  </textarea><br>
+
+        <input type="range" id="speedRange" min="0.1" max="2" step="0.1" value="1">
+<span id="speedValue">1x</span>
+
+    <button id="playbtn">Click to speak text and show word in span!</button>
+    <button id="stopbtn">Stop</button>
+    <button id="resumebtn">Start Again</button><br>
+    Speaking word: <span id="word"></span><br><br>
+    <div id="panel"></div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
